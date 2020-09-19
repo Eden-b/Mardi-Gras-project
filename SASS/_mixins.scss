@@ -1,0 +1,10 @@
+@mixin mediaQueryTablets($width: 768px) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+@mixin mediaQueryDesktop($width: 992px) {
+  @media (min-width: $width) {
+    @content;
+  }
+}

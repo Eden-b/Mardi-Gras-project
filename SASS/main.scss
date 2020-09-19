@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=HennPennyy+&family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import 'navbar';
+@import 'head';
+@import 'content';
+@import 'about';
+@import 'media';
+@import 'faq';
+@import 'contactUs';
+@import 'trevia';
+@import 'footer';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#nav-background,
+#hotel-popup,
+#nav-desktop {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  float: none !important;
+  overflow-x: hidden !important;
+}

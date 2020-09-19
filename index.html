@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link rel="icon" href="./image/mainLogo.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="./css/lightbox.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <div id="nav-desktop">
+      <ul id="nav-desktop-items">
+        <li
+          class="nav-desktop-item"
+          id="desktop-home"
+          style="background-color: #229e30"
+        >
+          Home
+        </li>
+        <li
+          class="nav-desktop-item"
+          id="desktop-about"
+          style="background-color: #9457ce"
+        >
+          About
+        </li>
+        <li
+          class="nav-desktop-item"
+          id="desktop-media"
+          style="background-color: #e7c52e; color: black"
+        >
+          Media
+        </li>
+        <li
+          class="nav-desktop-item"
+          id="desktop-faq"
+          style="background-color: #9457ce"
+        >
+          FAQ
+        </li>
+        <li
+          class="nav-desktop-item"
+          id="desktop-contact-us"
+          style="background-color: #229e30"
+        >
+          Contact Us
+        </li>
+      </ul>
+    </div>
+    <nav>
+      <div id="nav-background">
+        <div id="menu">MENU<i id="hamurger-icon" class="fas fa-bars"></i></div>
+      </div>
+      <div class="navbar-expand">
+        <div class="item home" id="nav-home">Home</div>
+        <div class="item about" id="nav-about">About</div>
+        <div class="item contact-us" id="nav-contact-us">Contact Us</div>
+        <div class="item faq" id="nav-faq">FAQ</div>
+        <div class="item media" id="nav-media">Media</div>
+      </div>
+    </nav>
+    <title>Mardi Gras</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <!-- Header -->
+    <section>
+      <div class="overlay">
+        <img id="flags" src="./image/flags.png" alt="" />
+        <div id="main-background"></div>
+        <!-- Carousel image slider -->
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="./image/slider-image-5.jpg"
+                alt="First slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First Slide</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Fugit a veniam nemo facere beatae, ipsa quisquam asperiores
+                  inventore debitis harum ducimus atque blanditiis quo illum
+                  incidunt! Officia, nulla amet. Exercitationem?
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="./image/slider-image-4.jpg"
+                alt="Second slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Fugit a veniam nemo facere beatae, ipsa quisquam asperiores
+                  inventore debitis harum ducimus atque blanditiis quo illum
+                  incidunt! Officia, nulla amet. Exercitationem?
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="./image/slider-image-3.jpg"
+                alt="Third slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Fugit a veniam nemo facere beatae, ipsa quisquam asperiores
+                  inventore debitis harum ducimus atque blanditiis quo illum
+                  incidunt! Officia, nulla amet. Exercitationem?
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="./image/slider-image-1.jpg"
+                alt="Fourth slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fourth slide</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Fugit a veniam nemo facere beatae, ipsa quisquam asperiores
+                  inventore debitis harum ducimus atque blanditiis quo illum
+                  incidunt! Officia, nulla amet. Exercitationem?
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="./image/slider-image-2.jpg"
+                alt="Fourth slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fifth slide</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Fugit a veniam nemo facere beatae, ipsa quisquam asperiores
+                  inventore debitis harum ducimus atque blanditiis quo illum
+                  incidunt! Officia, nulla amet. Exercitationem?
+                </p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!-- Carousel image slider -->
+        <img id="logo" src="./image/mainLogo.png" alt="" />
+        <div>
+          <h3>
+            <i class="far fa-calendar-alt pr-2"></i>Tuesday 16st Feb, 2021
+          </h3>
+          <h3>
+            <i class="fas fa-map-marker-alt pr-2"></i>New Orleans, LA 70130-1805
+          </h3>
+        </div>
+        <h1 id="main-h1">Mardi Gras 2021</h1>
+        <h2>Don’t miss the chance to get admit</h2>
+        <button id="book-hotel-button">BOOK HOTEL</button>
+        <div id="hotel-popup">
+          <button id="close-popup"><i class="fas fa-times"></i></button>
+          <div class="container">
+            <div class="grid-item" id="sheraton">
+              <a
+                href="https://www.marriott.com/hotels/travel/msyis-sheraton-new-orleans-hotel/"
+                ><img id="sheraton" src="/image/hotels/sheraton.png" alt=""
+              /></a>
+            </div>
+
+            <div class="grid-item" id="ace-hotel">
+              <a href="https://www.acehotel.com/neworleans/"
+                ><img src="/image/hotels/Ace_Hotel.png" alt=""
+              /></a>
+            </div>
+            <div class="grid-item" id="Ritz">
+              <a href="https://www.ritzcarlton.com/en/hotels/new-orleans"
+                ><img
+                  id="Ritz-Carlton"
+                  src="/image/hotels/Ritz-Carlton.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- Content -->
+      <div class="content">
+        <img id="masks" src="/image/masks.png" alt="" />
+        <h1>Event Will Start In</h1>
+        <p data-aos="fade-up">
+          We coordinates and manages events for executives, small business
+          owners and entrepreneurs. We understand the high demands of a busy
+          work schedule and are here to organize all of your business, social
+          and formal events.
+        </p>
+        <!-- CountDown Timer -->
+        <div class="countdown">
+          <div>
+            <span id="days">00 </span><span id="d">Days</span>
+
+            <span id="hours">00 </span><span id="h">Hours</span>
+            <span id="minutes">00 </span><span id="m">Mins</span>
+            <span id="secs">00 </span><span id="s">Secs</span>
+          </div>
+        </div>
+        <div class="diagonalEnd"></div>
+      </div>
+    </section>
+
+    <section class="walk-ons-bar">
+      <div data-aos="fade-right">
+        <i class="fas fa-beer"></i>
+        <div id="walk-ons-bar-content">
+          <a href="https://walk-ons.com/"
+            ><h1>Walk-On's and Bar <i class="fas fa-chevron-right"></i></h1
+          ></a>
+          <p>Check us Out</p>
+        </div>
+      </div>
+    </section>
+    <section class="thehauntedmuseum">
+      <div data-aos="fade-up">
+        <h1>Our Museums</h1>
+        <div id="Museums-imgs">
+          <a href="https://www.lcm.org/">
+            <img
+              src="./image/bars-mousen/Louisiana-Children's-Museum.png"
+              alt=""
+          /></a>
+          <a href="https://thehauntedmuseum.com/"
+            ><img
+              src="./image/bars-mousen/Haunted-Museum.png"
+              alt=""
+              id="Haunted-Museum"
+          /></a>
+          <a href="http://www.museumofdeath.net/"
+            ><img src="./image/bars-mousen/Museum-of-Death.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section class="premium-parking">
+      <div id="premium-parking-content" data-aos="fade-left">
+        <a
+          href="https://www.premiumparking.com/P402?back_params=%2Fcity%2Fnew-orleans%2Fwyndham-new-orleans---french-quarter"
+          ><h1><i class="fas fa-chevron-left"></i>Premium Parking - P402</h1></a
+        >
+        <i class="fas fa-parking"></i>
+      </div>
+      <div class="diagonalStart"></div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about">
+      <div id="about-background">
+        <div id="overlay"></div>
+      </div>
+      <h1 id="about-h1">About</h1>
+      <div class="text-contect" data-aos="fade-up">
+        <p>
+          Mardi Gras is about music, parades, picnics, floats and excitement.
+          It's one big holiday in New Orleans!
+        </p>
+        <p>
+          Revelers know to wear costumes or at least dress in purple, green, and
+          gold, and adorn themselves with long beads caught from the floats of
+          previous parades. You'll see a lot of crazy costumes, kids with their
+          families are everywhere, and both locals and visitors having a great
+          time. Parade goers will sit on the ground, throw balls, play music,
+          eat great food and watch the crowds walk by between parades. On Mardi
+          Gras day, the majority of non-essential businesses are shut down
+          because of the celebration.
+        </p>
+        <p>
+          Experienced revelers know to bring a large bag with them so they can
+          haul away all the beads and trinkets they will catch from the parades!
+        </p>
+        <p>
+          Every year, we get a lot of questions about how it all begin, and how
+          the traditions have changed. Click on the buttons below to find out
+          the answers to some of the most frequently asked questions.
+        </p>
+      </div>
+
+      <div class="mayorcard">
+        <div class="mayorcard-text">
+          <h1>LaToya Cantrell</h1>
+          <h3>Mayor of New Orleans</h3>
+        </div>
+        <img src="./image/Mayor of new orleans.jpg" alt="" />
+        <div class="mayorcard-text">
+          <p>
+            As Mayor of the great City of New Orleans, I invite you to visit our
+            city to experience the excitement of Mardi Gras!
+          </p>
+          <div id="mayorcard-icons">
+            <a href="#" class="card-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="card-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="card-icon"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="media">
+      <img
+        id="media-background-top"
+        src="./image/media-background.png"
+        alt=""
+      />
+      <h1>Media</h1>
+
+      <div class="grid-container" data-aos="zoom-in">
+        <div class="grid-item" id="youtube-vid">
+          <iframe
+            src="https://www.youtube.com/embed/8i--vdiozL0"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <div class="grid-item">
+          <a href="./image/media-images/img1.jpg" data-lightbox="roadtrip"
+            ><img src="./image/media-images/img1.jpg" alt=""
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="./image/media-images/img2.jpg" data-lightbox="roadtrip"
+            ><img src="./image/media-images/img2.jpg" alt=""
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="./image/media-images/img3.jpg" data-lightbox="roadtrip"
+            ><img src="./image/media-images/img3.jpg" alt=""
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="./image/media-images/img4.jpg" data-lightbox="roadtrip"
+            ><img src="./image/media-images/img4.jpg" alt=""
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="./image/media-images/img5.jpg" data-lightbox="roadtrip"
+            ><img src="./image/media-images/img5.jpg" alt=""
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="./image/media-images/img6.jpg" data-lightbox="roadtrip"
+            ><img src="./image/media-images/img6.jpg" alt=""
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="./image/media-images/img7.jpg" data-lightbox="roadtrip"
+            ><img src="./image/media-images/img7.jpg" alt=""
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="./image/media-images/img8.jpg" data-lightbox="roadtrip"
+            ><img src="./image/media-images/img8.jpg" alt=""
+          /></a>
+        </div>
+      </div>
+      <img
+        id="media-background-bottom"
+        src="./image/media-background.png"
+        alt=""
+      />
+    </section>
+    <!-- FAQ  -->
+    <section id="faq">
+      <h1>FAQ</h1>
+      <div class="container">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  1: Is there an "official" Mardi Gras?
+                </button>
+              </h5>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                No! Mardi Gras is a holiday, just like Christmas and Easter. It
+                belongs to everyone. Do not believe the claims of businesses who
+                offer "official" Mardi Gras merchandise or an "official" Mardi
+                Gras website. Using the term “official” is just a way for
+                vendors to sell their products or services to those who do not
+                know better. Products or websites are not licensed by the
+                government for Mardi Gras. Each individual parade krewe is
+                responsible for all of its merchandise. In some parts of the
+                country, official organizations control their Mardi Gras
+                celebration, but this is not true in New Orleans.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  2: When does Mardi Gras start and end?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                The Carnival season always begins on Jan. 6, which is King’s Day
+                (Feast of the Epiphany). Mardi Gras day (Fat Tuesday), however,
+                is on a different day each year. Fat Tuesday changes every year
+                because Easter Sunday is never on the same Sunday each year. Fat
+                Tuesday is always the day before Ash Wednesday. Most visitors
+                plan to arrive no later than the Saturday prior to Mardi Gras
+                day and stay through Ash Wednesday. Check out our dates page to
+                see when Fat Tuesday will fall through the next few years.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  3: What is the weather usually like during Mardi Gras? What
+                  should I pack?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                The weather during Mardi Gras can vary from very cold to very
+                warm, almost hot. Sometimes it will change from one extreme to
+                the other during the same day. It’s a good idea to layer your
+                clothes since a chilly morning may turn into a warm afternoon.
+                Since you will be spending long days outside, pack comfortable
+                shoes and clothes that can get somewhat dirty. Don’t forget to
+                check the forecast for rain. If storms are predicted, then
+                you’ll definitely want to bring a raincoat!
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFourth">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseFourth"
+                  aria-expanded="false"
+                  aria-controls="collapseFourth"
+                >
+                  4: Where can I book a room with a balcony to watch the parades
+                  go by?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseFourth"
+              class="collapse"
+              aria-labelledby="headingFourth"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                The best option is to reserve a package in the French Quarter or
+                along the parade route that offers a balcony, food and a
+                bathroom pass.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFifth">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseFifth"
+                  aria-expanded="false"
+                  aria-controls="collapseFifth"
+                >
+                  5: How much does it cost to go to Mardi Gras?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseFifth"
+              class="collapse"
+              aria-labelledby="headingFifth"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                It's free! Not only that, but you'll leave with bags of Mardi
+                Gras beads and throws. That's why we call it the "Greatest Free
+                Show on Earth!"
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingSixth">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseSixth"
+                  aria-expanded="false"
+                  aria-controls="collapseSixth"
+                >
+                  6: I only have limited time. What is the prime time to visit
+                  during Mardi Gras?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseSixth"
+              class="collapse"
+              aria-labelledby="headingSixth"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                The weekend before Fat Tuesday is the prime time to visit New
+                Orleans for Mardi Gras. This is the weekend when Bacchus and
+                Endymion, two of the biggest parades of the season, roll down
+                the streets of New Orleans. The streets are packed all day
+                Saturday and Sunday with parade watchers. If you can stay longer
+                than a weekend, Monday (Lundi Gras) and Fat Tuesday are also
+                great days to experience Mardi Gras. Orpheus, another big
+                parade, rolls on that Monday night, and the Zulu Lundi Gras
+                festival goes on all day. On Fat Tuesday, walking around the
+                French Quarter and seeing all of the costumes and masks is a
+                unique and thrilling experience.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingSeventh">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseSeventh"
+                  aria-expanded="false"
+                  aria-controls="collapseSeventh"
+                >
+                  7: What happens if there is bad weather?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseSeventh"
+              class="collapse"
+              aria-labelledby="headingSeventh"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                The parades roll in light rain. The officials will only postpone
+                if the weather is predicted to be severe. The local TV and radio
+                news stations (such as WWL Radio) broadcast the hour by hour
+                updates.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="trevia">
+      <h1>Trivia<i class="fas fa-theater-masks"></i></h1>
+      <form action="" name="trevia">
+        <div class="question-wrap">
+          <p>
+            1. Which of the following is not one of New Orleans' Mardi Gras
+            colors?
+          </p>
+          <input type="radio" id="green" name="q1" value="a" />
+          <label for="green">Green</label><br />
+          <input type="radio" id="yellow" name="q1" value="b" />
+          <label for="yellow">Yellow</label><br />
+          <input type="radio" id="blue" name="q1" value="c" />
+          <label for="blue">Blue</label><br />
+          <input type="radio" id="purple" name="q1" value="d" />
+          <label for="purple">Purple</label><br />
+        </div>
+        <div class="question-wrap">
+          <p>
+            2. Which of the New Orleans Mardi Gras colors is not a Mobilian
+            Mardi Gras color?
+          </p>
+          <input type="radio" id="purple2" name="q2" value="a" />
+          <label for="purple2">Purple</label><br />
+          <input type="radio" id="blue2" name="q2" value="b" />
+          <label for="blue2">Blue</label><br />
+          <input type="radio" id="yellow2" name="q2" value="c" />
+          <label for="yellow2">Yellow</label><br />
+          <input type="radio" id="green2" name="q2" value="d" />
+          <label for="green2">Green</label><br />
+        </div>
+        <div class="question-wrap">
+          <p>3. What medieval tradition can Mardi Gras be traced back to?</p>
+          <input type="radio" id="green" name="q3" value="a" />
+          <label for="parading held in celebration of Lent"
+            >parading held in celebration of Lent</label
+          ><br />
+          <input
+            type="radio"
+            id="feasting before the arrival of Lent"
+            name="q3"
+            value="b"
+          />
+          <label for="feasting before the arrival of Lent"
+            >feasting before the arrival of Lent</label
+          ><br />
+          <input
+            type="radio"
+            id="the throwing of trinkets by children to celebrate Lent"
+            name="q3"
+            value="c"
+          />
+          <label for="the throwing of trinkets by children to celebrate Lent"
+            >the throwing of trinkets by children to celebrate Lent</label
+          ><br />
+          <input
+            type="radio"
+            id="ordinary citizens dressing in costume to celebrate Lent"
+            name="q3"
+            value="d"
+          />
+          <label for="ordinary citizens dressing in costume to celebrate Lent"
+            >ordinary citizens dressing in costume to celebrate Lent</label
+          ><br />
+        </div>
+        <div class="question-wrap">
+          <p>
+            4. What is the name of the first mystic society, created in 1830?
+          </p>
+          <input type="radio" id="Order of Myths" name="q4" value="a" />
+          <label for="Order of Myths">Order of Myths</label><br />
+          <input type="radio" id="Crewe of Comos" name="q4" value="b" />
+          <label for="Crewe of Comos">Crewe of Comos</label><br />
+          <input
+            type="radio"
+            id="Cowbellion de Rakin Society"
+            name="q4"
+            value="c"
+          />
+          <label for="Cowbellion de Rakin Society"
+            >Cowbellion de Rakin Society</label
+          ><br />
+          <input
+            type="radio"
+            id="The Lost Cause Minstrels"
+            name="q4"
+            value="d"
+          />
+          <label for="The Lost Cause Minstrels">The Lost Cause Minstrels</label
+          ><br />
+        </div>
+        <div class="question-wrap">
+          <p>5. When did this original mystic society hold its parade?</p>
+          <input type="radio" id="Easter Sunday" name="q5" value="a" />
+          <label for="Easter Sunday">Easter Sunday</label><br />
+          <input type="radio" id="Mardi Gras Day" name="q5" value="b" />
+          <label for="Mardi Gras Day">Mardi Gras Day</label><br />
+          <input type="radio" id="New Year's Eve" name="q5" value="c" />
+          <label for="New Year's Eve">New Year's Eve</label><br />
+          <input type="radio" id="Christmas Eve" name="q5" value="d" />
+          <label for="Christmas Eve">Christmas Eve</label><br />
+        </div>
+        <div class="question-wrap">
+          <p>
+            6. Which of the following was New Orleans' first mystic society?
+          </p>
+          <input type="radio" id="Crewe of Comos" name="q6" value="a" />
+          <label for="Crewe of Comos">Crewe of Comos</label><br />
+          <input type="radio" id="Comic Cowboys" name="q6" value="b" />
+          <label for="Comic Cowboys">Comic Cowboys</label><br />
+          <input type="radio" id="Order of Inca" name="q6" value="c" />
+          <label for="Order of Inca">Order of Inca</label><br />
+          <input type="radio" id="Crewe of Columbus" name="q6" value="d" />
+          <label for="Crewe of Columbus">Crewe of Columbus</label><br />
+        </div>
+        <div class="question-wrap">
+          <p>
+            7. Which of the following individuals gained fame for reviving Mardi
+            Gras after the Civil War?
+          </p>
+          <input type="radio" id="Ethel Hodgson" name="q7" value="a" />
+          <label for="Ethel Hodgson">Ethel Hodgson</label><br />
+          <input type="radio" id="Michael Kraft" name="q7" value="b" />
+          <label for="Michael Kraft">Michael Kraft</label><br />
+          <input type="radio" id="Joseph Cain" name="q7" value="c" />
+          <label for="Joseph Cain">Joseph Cain</label><br />
+          <input type="radio" id="Daniel E. Huger" name="q7" value="d" />
+          <label for="Daniel E. Huger">Daniel E. Huger</label><br />
+        </div>
+        <div class="question-wrap">
+          <p>8. Which of the following societies did Joseph Cain found?</p>
+          <input type="radio" id="Order of Myths2" name="q8" value="a" />
+          <label for="Order of Myths2">Order of Myths</label><br />
+          <input
+            type="radio"
+            id="Strikers Independent Society"
+            name="q8"
+            value="b"
+          />
+          <label for="Strikers Independent Society"
+            >Strikers Independent Society</label
+          ><br />
+          <input type="radio" id="Crewe of Comos" name="q8" value="c" />
+          <label for="Crewe of Comos">Crewe of Comos</label><br />
+          <input type="radio" id="Mystics of Time" name="q8" value="d" />
+          <label for="Mystics of Time">Mystics of Time</label><br />
+        </div>
+        <div class="question-wrap">
+          <p>9. What was the first black mystic society in Mobile?</p>
+          <input
+            type="radio"
+            id="Knights of May Zulu Club"
+            name="q9"
+            value="a"
+          />
+          <label for="Knights of May Zulu Club">Knights of May Zulu Club</label
+          ><br />
+          <input type="radio" id="Order of Doves" name="q9" value="b" />
+          <label for="Order of Doves">Order of Doves</label><br />
+          <input type="radio" id="Order of Mammoths" name="q9" value="c" />
+          <label for="Order of Mammoths">Order of Mammoths</label><br />
+          <input
+            type="radio"
+            id="Colored Carnival Association"
+            name="q9"
+            value="d"
+          />
+          <label for="Colored Carnival Association"
+            >Colored Carnival Association</label
+          ><br />
+        </div>
+        <div class="question-wrap">
+          <p>10. Which of the following was Mobile's first women's society?</p>
+          <input type="radio" id="Order of Athena" name="q10" value="a" />
+          <label for="Order of Athena">Order of Athena</label><br />
+          <input type="radio" id="Mystical Ladies" name="q10" value="b" />
+          <label for="Mystical Ladies">Mystical Ladies</label><br />
+          <input type="radio" id="Le Krewe de Bienville" name="q10" value="c" />
+          <label for="Le Krewe de Bienville">Le Krewe de Bienville</label><br />
+          <input type="radio" id="Polka Dots" name="q10" value="d" />
+          <label for="Polka Dots">Polka Dots</label><br />
+        </div>
+        <div class="result"></div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <!-- Contact US -->
+    <div class="contact-us-wrapper">
+      <section id="contact-us">
+        <h1>Contact Us</h1>
+        <p>
+          For press inquiries, please contact
+          <b>press@mardigrasneworleans.com</b>. For all other questions, please
+          use the form below.
+        </p>
+        <form id="contact-us-form" action="">
+          <input
+            name="firstName"
+            type="text"
+            placeholder="First Name"
+            required
+          />
+          <label for="firstName">First Name</label>
+          <input type="text" placeholder="Last Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <textarea name="" id="" placeholder="Message" required></textarea>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </section>
+      <!-- End of Contact US -->
+
+      <div id="google-map" style="background-color: #040404">
+        <iframe
+          width="100%"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Mardi%20Gras%20World,%20Port%20of%20New%20Orleans%20Place,%20New%20Orleans,%20%D7%9C%D7%95%D7%90%D7%99%D7%96%D7%99%D7%90%D7%A0%D7%94,%20%D7%90%D7%A8%D7%A6%D7%95%D7%AA%20%D7%94%D7%91%D7%A8%D7%99%D7%AA%20+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe>
+      </div>
+    </div>
+    <!-- Footer -->
+    <section id="footer">
+      <p>Copyright by Eden Bambaron © 1996-2020 MardiGrasNewOrleans.com</p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/MardiGrasNewOrleans"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com/MardiGrasNOLA"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/mardigrasneworleans/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="https://www.tripadvisor.com/Profile/MardiGrasNOLA"
+          ><i class="fab fa-tripadvisor"></i
+        ></a>
+      </div>
+    </section>
+    <!-- End of Footer -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fbeb5482c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      lightbox.option({
+        resizeDuration: 200,
+        wrapAround: true,
+        alwaysShowNavOnTouchDevices: true,
+        positionFromTop: 180,
+      });
+    </script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

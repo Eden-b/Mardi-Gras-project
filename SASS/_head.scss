@@ -1,0 +1,267 @@
+@import 'mainColors';
+@import 'mixins';
+.overlay {
+  height: 100vh;
+  background-color: #080516;
+  position: relative;
+  @include mediaQueryTablets() {
+    height: 100vh;
+  }
+  @include mediaQueryDesktop() {
+    height: 150vh;
+  }
+
+  #main-background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/image/slider-image-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 47%;
+    position: absolute;
+    top: 0;
+    opacity: 0.125;
+    @include mediaQueryDesktop() {
+      height: 150vh;
+    }
+  }
+  #carouselExampleIndicators {
+    padding: 250px 0 50px 0;
+    display: none;
+    @include mediaQueryDesktop() {
+      display: block;
+    }
+  }
+  .carousel-item {
+    height: 700px;
+    // overflow: hidden;
+  }
+  .carousel-item img {
+    height: 700px;
+    // overflow: hidden;
+  }
+  .carousel-indicators {
+    bottom: 60px;
+  }
+  .carousel-control-prev {
+    top: 250px;
+  }
+  .carousel-control-next {
+    top: 250px;
+  }
+  #flags {
+    position: absolute;
+    z-index: 10;
+    top: 45px;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 70%;
+    margin: auto;
+    @include mediaQueryTablets() {
+      top: 55px;
+    }
+    @include mediaQueryDesktop() {
+      width: 50%;
+    }
+  }
+
+  #logo {
+    z-index: 10;
+    position: relative;
+    padding-top: 30vh;
+    display: block;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 30px;
+
+    @include mediaQueryTablets() {
+      padding-top: 45vh;
+      width: 250px;
+    }
+    @include mediaQueryDesktop() {
+      display: none;
+    }
+  }
+  div {
+    text-align: center;
+    h3 {
+      @include mediaQueryTablets() {
+        font-size: 1.4em;
+      }
+    }
+  }
+  h3 {
+    font-size: 0.8em;
+    letter-spacing: -1px;
+    font-family: Henny;
+    color: $colorWhite;
+    display: inline;
+    & + h3 {
+      padding-left: 5.3%;
+    }
+  }
+  #main-h1 {
+    color: $colorYellow;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    font-family: Pattaya;
+    position: relative;
+    @include mediaQueryTablets() {
+      font-size: 4.5em;
+      width: 600px;
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -1.5vh;
+        left: 0%;
+        width: 100px;
+        height: 1px;
+        background-color: white;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -1.5vh;
+        left: 85%;
+        width: 100px;
+        height: 1px;
+        background-color: white;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 15px;
+    color: $colorWhite;
+    text-align: center;
+    font-family: Henny;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+
+    @include mediaQueryTablets() {
+      font-size: 1.3em;
+    }
+  }
+  #book-hotel-button {
+    cursor: pointer;
+    position: relative;
+    z-index: -10;
+    background-color: red;
+    z-index: 20;
+    padding: 0 10px;
+    height: 40px;
+    border: 0;
+    margin: auto;
+    display: block;
+    color: $colorWhite;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 0px 6px 15px 1px rgba(0, 0, 0, 0.67);
+  }
+  #hotel-popup {
+    z-index: 300;
+    visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    background-color: rgba($color: #808080, $alpha: 0.8);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    #close-popup {
+      cursor: pointer;
+      position: absolute;
+      right: 5%;
+      top: 10px;
+      color: $colorBlack;
+      font-size: 1.1em;
+      background-color: transparent;
+      border: transparent;
+      &:hover {
+        color: #383838;
+      }
+      @include mediaQueryTablets() {
+        font-size: 0.9em;
+      }
+    }
+    .container {
+      height: 450px;
+      width: 300px;
+      background-color: #fff8e1;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 5px;
+      padding: 10px;
+      @include mediaQueryTablets() {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include mediaQueryTablets() {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        left: 0;
+        width: 450px;
+        height: 700px;
+      }
+
+      .grid-item {
+        background-color: rgba(250, 249, 245, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 5px;
+        font-size: 30px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mediaQueryTablets() {
+          width: 100%;
+          height: 100%;
+
+          &#sheraton {
+            height: 100%;
+            grid-column: 1/4;
+          }
+
+          &#ace-hotel {
+            grid-row: 2;
+            grid-column: 1/4;
+          }
+          &#Ritz {
+            grid-row: 3;
+            grid-column: 1/4;
+          }
+        }
+
+        img {
+          width: 90%;
+          height: 100px;
+          @include mediaQueryTablets() {
+            width: 80%;
+            height: 200px;
+          }
+        }
+
+        #Ritz-Carlton {
+          height: 130px;
+          width: 70%;
+          @include mediaQueryTablets() {
+            width: 80%;
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
